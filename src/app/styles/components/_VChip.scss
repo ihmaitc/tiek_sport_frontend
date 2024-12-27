@@ -1,0 +1,13 @@
+.v-chip__content {
+    height: auto;
+    min-height: 32px;
+    white-space: inherit;
+    width: 100%;
+}
+.chip-content {
+    max-width: 99%;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

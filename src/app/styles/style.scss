@@ -1,0 +1,119 @@
+@import "./variables";
+@import "vuetify/styles/main.sass";
+@import "./override";
+@import "./layout/text";
+@import "./layout/reboot";
+@import "./layout/container";
+@import "./layout/sidebar";
+@import "./layout/rtl";
+@import "./layout/topbar";
+
+@import "./components/VBreadcrumb";
+@import "./components/VAlert";
+@import "./components/VButtons";
+@import "./components/VCard";
+@import "./components/VCarousel";
+@import "./components/VField";
+@import "./components/VList";
+@import "./components/VInput";
+@import "./components/VNavigationDrawer";
+@import "./components/VShadow";
+@import "./components/VSwitch";
+@import "./components/VSelectionControl";
+@import "./components/VTextField";
+@import "./components/VTextarea";
+@import "./components/VTabs";
+@import "./components/VTable";
+@import "./components/VExpansionpanel";
+@import "./components/VTimeline";
+@import "./components/VChip";
+@import "./fonts";
+
+// @import "vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css";
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.has-error {
+  color: rgb(var(--v-theme-error)) !important;
+}
+
+.page-wrapper {
+  padding-top: 0 !important;
+}
+.my-custom-pagination {
+  .v-pagination__list {
+    display: flex;
+    justify-content: end;
+  }
+}
+.mx-datepicker {
+  .mx-input-wrapper {
+    .mx-icon-calendar,
+    .mx-icon-clear {
+      margin-top: -10px;
+    }
+  }
+}
+.v-input--disabled {
+  .v-input__control {
+    .v-field--disabled {
+      opacity: 0.8;
+      border-radius: $border-radius-root !important;
+      .v-field__field {
+        .v-field__input {
+          .v-autocomplete__selection {
+            .v-autocomplete__selection-text {
+              color: #000 !important;
+            }
+          }
+        }
+      }
+
+      border: 1px solid #000;
+    }
+  }
+}
+
+.mx-icon-calendar,
+.mx-icon-clear {
+  transform: translateY(var(--divider)) !important;
+}
+
+.mx-datepicker-popup {
+  z-index: 4000 !important;
+}
+
+.isDeath {
+  position: relative;
+  display: flex;
+  filter: grayscale(1);
+}
+.v-btn {
+  text-transform: inherit !important;
+}
+
+.v-divider {
+  opacity: 1 !important;
+}
+.v-label {
+  white-space: inherit;
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.limited-text {
+  --snup: 3;
+  display: -webkit-box;
+  -webkit-line-clamp: var(--snup);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

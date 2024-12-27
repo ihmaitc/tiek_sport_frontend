@@ -1,0 +1,1 @@
+# Ihma Kambag'allik reestri
